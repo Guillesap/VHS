@@ -1,9 +1,28 @@
-# VHS
-Este proyecto es una API con varios endpoints creados de lado del servidor para realizar distintas acciones, utilizando el patrón de arquitectura
-MVC. Además realicé el Front End de la aplicación para que sea más fácil e intuitivo probar algunas cosas.  
-Todo esto fue realizado usando Node js para el servidor, con varios módulos de este y MongoDB con Mongoose para la persistencia de datos.
+<h1 align="center">Proyecto Final</h1>
+<h2 align="center">⭐️VHS "Video Club Virtual"⭐️</h2>
+<p>El proyecto de un Video Club virtual, en el cual el usuario puede seleccionar películas de terror clásicas para los nostaligos. El usuario se registra, inicia su sesión y puede observar la Tienda de Películas. Asimismo, cuenta con una sección de Chat, para realizar consultas.
+Finalmente cuenta con la posibilidad de incorporar nuevos títulos que ingresan.
+</p>
 
-El proyecto está subido y se puede ver en [Heroku](https://coderhouse-proyecto-final.herokuapp.com/).
+## 🌐 [Ver Proyecto en Heroku](https://guillesapag.herokuapp.com/login)
+
+## 🤝Instalar dependencias
+npm install
+
+## Dependencias utilizadas
+autocannon /axios/ babel-cli/ bcrypt/ body-parser/compression
+connect-mongo/cookie-parser/cors/ dotenv/express/ express-handlebars
+express-session/jsonwebtoken/knex/log4js/mongoose/multer/nodemailer
+nodemon/normalizr/passport/socket.io/twilio/typescript/
+
+## ✨Iniciar el servidor
+npm run start
+
+## Visualización proyecto
+A fin de visualizar el proyecto VHS, registrarse o ingresar con usuario de prueba, previamente registrado:
+Correo: cristian2022@hotmail.com   password: boquita, a fin de acceder a la pantalla inicial.
+
+
 
 ## Routes
 ### Productos
@@ -45,67 +64,8 @@ te redirecciona a la página principal ya logueado.
 - `GET /api/randoms?cant` Se le puede pasar un número a través de la ruta y este retorna un JSON con números al azar entre 1 y 1000, y la cantidad de veces
 que tocaron. Si no se pasa un valor para cant este es 1000 por defecto.
 
-## Models
-### Productos
-```
-{
-  title: { type: String, require: true, max: 100 },
-  price: { type: Number, require: true },
-  thumbnail: { type: String, require: true },
-  categoria: { type: String, require: true }
-}
-```
+## 🏠 [Homepage](https://github.com/Guillesap)
 
-### Mensajes
-```
-{
-  id: { type: Number, require: true },
-  author: {
-    id: { type: String, require: true, max: 100 },
-    username: { type: String, require: true },
-    apellido: String,
-    edad: Number,
-    alias: String,
-    avatar: { type: String, require: true }
-  },
-  text: {
-    id: { type: Number, require: true },
-    hora: { type: Date, require: true },
-    text: { type: String, require: true }
-  }
-}
-```
+## 📝 License
 
-### Carritos
-```
-{
-  productos: { type: Array, require: true, default: [] },
-  email: { type: String, require: true },
-  direccion: { type: String, require: true }
-}
-```
-
-### Users
-```
-{
-  userId: String,
-  email: { type: String, require: true },
-  password: String,
-  username: { type: String, require: true },
-  direccion: String,
-  edad: Number,
-  telefono: String,
-  avatar: String
-}
-```
-
-### Ordenes
-```
-{
-  productos: { type: Array, require: true, default: [] },
-  ordenId: { type: Number, require: true },
-  hora: { type: Date, require: true },
-  estado: { type: String, require: true, default: 'generada' },
-  email: { type: String, require: true }
-}
-```
+Copyright © 2022 👤[Guillermo Sapag](https://vhsvideoclub.netlify.app/).
