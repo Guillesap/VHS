@@ -64,21 +64,26 @@
       <% } %>
     </div>
     <div class="outer-container">
-      <h1 class="titulo">Ingrese un Producto</h1>
+      <h2 class="subtitulo">Lista de Películas</h2>
+      <div class="productos"></div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h1 class="titulo">Películas ingresadas Mes Agosto</h1>
       <form class="productos-form" method="POST" action="/productos">
-        <label for="title">Nombre</label>
+        <label for="title">Título</label>
         <input type="text" name="title" required />
         <label for="price">Precio</label>
         <input pattern="^\d+\.?\d*$" type="text" name="price" required />
         <label for="categoria">Categoria</label>
         <input type="text" name="categoria" required />
-        <label for="thumbnail">Foto URL</label>
+        <label for="thumbnail">Portada</label>
         <input type="text" name="thumbnail" required />
-        <button type="submit">Agregar Producto</button>
+        <button type="submit">Agregar Película</button>
       </form>
-      <h2 class="subtitulo">Lista de Productos</h2>
-      <div class="productos"></div>
-    </div>
+      </div>
+   
     <script src="../ejs.min.js"></script>
     <script type="module" src="../js/index.js"></script>
   </body>
