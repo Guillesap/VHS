@@ -10,10 +10,10 @@ Finalmente cuenta con la posibilidad de incorporar nuevos títulos que ingresan.
 npm install
 
 ## Dependencias utilizadas
-autocannon /axios/ babel-cli/ bcrypt/ body-parser/compression
-connect-mongo/cookie-parser/cors/ dotenv/express/ express-handlebars
-express-session/jsonwebtoken/knex/log4js/mongoose/multer/nodemailer
-nodemon/normalizr/passport/socket.io/twilio/typescript/
+bcrypt/ body-parser/compression
+connect-mongo/dotenv/ejs/express/express-session/minimist/mongoose
+nodemailer/nodemon/passport/passport-local/pino/socket.io/twilio
+
 
 ## ✨Iniciar el servidor
 npm run start
@@ -21,7 +21,6 @@ npm run start
 ## Visualización proyecto
 A fin de visualizar el proyecto VHS, registrarse o ingresar con usuario de prueba, previamente registrado:
 Correo: cristian2022@hotmail.com   password: boquita, a fin de acceder a la pantalla inicial.
-
 
 
 ## Routes
