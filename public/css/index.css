@@ -1,6 +1,28 @@
 /***************/
 /* Login index */
 /***************/
+
+h1 {
+  color: rgb(12, 12, 36);
+  text-align: center;
+}
+
+h2 {
+  color: red;
+  text-align: center;
+}
+
+#foto img{
+  margin: 0 auto;
+  size: 10 mm;
+}
+
+#ghost {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1mm;
+}
+
 .btns-signup {
   display: flex;
   justify-content: end;
